@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from env import ENV
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -115,17 +116,30 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.0/howto/static-files/
+if ENV != 'prod':
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/static" or "C:/www/django/static".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, 'static/'),
-)
+    STATICFILES_DIRS = (
+        # Put strings here, like "/home/html/static" or "C:/www/django/static".
+        # Always use forward slashes, even on Windows.
+        # Don't forget to use absolute paths, not relative paths.
+        os.path.join(BASE_DIR, 'static/'),
+    )
 
-STATIC_URL = '/static/'
-STATIC_ROOT = '..\koinetStatics'
+    STATIC_URL = '/static/'
+    STATIC_ROOT = '..\koinetStatics'
+else:
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+    STATICFILES_DIRS = (
+        # Put strings here, like "/home/html/static" or "C:/www/django/static".
+        # Always use forward slashes, even on Windows.
+        # Don't forget to use absolute paths, not relative paths.
+        '/home/beren5000/webapps/koinet/koinet/static',
+    )
+
+    STATIC_URL = '/static/'
+    STATIC_ROOT = '/home/beren5000/webapps/koinetstatic/static'
 
