@@ -140,6 +140,6 @@ else:
         '/home/beren5000/webapps/koinet/koinet/static',
     )
 
-    STATIC_URL = '/static/'
+    STATIC_URL = '/'
     STATIC_ROOT = '/home/beren5000/webapps/koinetstatic/static'
 
