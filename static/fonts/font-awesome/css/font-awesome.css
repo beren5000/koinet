@@ -172,8 +172,14 @@
 .fa-search:before {
   content: "\f002";
 }
+.paper-plane:before {
+  content: "\f1d8";
+}
 .fa-envelope-o:before {
   content: "\f003";
+}
+.fa-dise:before {
+  content: "\f044";
 }
 .fa-heart:before {
   content: "\f004";
@@ -234,6 +240,9 @@
 }
 .fa-clock-o:before {
   content: "\f017";
+}
+.fa-grafi:before {
+  content: "\f201";
 }
 .fa-road:before {
   content: "\f018";
@@ -823,6 +832,9 @@
 }
 .fa-exchange:before {
   content: "\f0ec";
+}
+.fa-map:before {
+  content: "\f0e8";
 }
 .fa-cloud-download:before {
   content: "\f0ed";

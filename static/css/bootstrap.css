@@ -59,8 +59,8 @@ h1 {
   font-size: 2em;
 }
 mark {
-  color: #000;
-  background: #ff0;
+  color: #262626;
+  background: #269abc;
 }
 small {
   font-size: 80%;
@@ -182,7 +182,7 @@ td,
 th {
   padding: 0;
 }
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
   *,
   *:before,
@@ -241,10 +241,10 @@ th {
   }
   .btn > .caret,
   .dropup > .btn > .caret {
-    border-top-color: #000 !important;
+    border-top-color: #262626 !important;
   }
   .label {
-    border: 1px solid #000;
+    border: 1px solid #262626;
   }
   .table {
     border-collapse: collapse !important;
@@ -1095,12 +1095,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #269abc;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #269abc;
   text-decoration: underline;
 }
 a:focus {
@@ -1573,6 +1573,12 @@ pre code {
 .container {
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container2 {
+  padding-right: 2px;
+  padding-left: 2px;
   margin-right: auto;
   margin-left: auto;
 }
