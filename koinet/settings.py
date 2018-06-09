@@ -26,7 +26,7 @@ SECRET_KEY = '=4k3arssw%242tnx7^k=q3ohi$9kg%2v0q)97@u458)*1=f$k#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['koinetdesign.com','www.koinetdesign.com']
+ALLOWED_HOSTS = ['localhost','koinetdesign.com','www.koinetdesign.com']
 
 
 # Application definition
